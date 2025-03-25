@@ -1,21 +1,29 @@
 .container{
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 15px;
-    padding-left: 15px;
+    margin: 0 auto;
+    padding: 0 15px;
     width: 100%;
     max-width: 1440px;
 }
+/* header */
+.header{
+     position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: hsla(0, 0%, 100%, .3);
+}
+
 .header__top{
 justify-items: end;
-margin-right: 100px;
 padding-top: 7px;
+width: 100%;
+display: flex;
+margin: 0px 0px 0px 10px;
 }
 .header__menu{
     flex: 1;
-    justify-content: center;
+    justify-content: end;
     display: flex;
-    background: hsla(0, 0%, 100%, .3);
 }
 .menu__list{
     display: flex;
@@ -24,45 +32,96 @@ padding-top: 7px;
     padding-bottom: 30px;
     font-family: Roboto, sans-serif;
 }
+.menu__list a{
+    text-decoration: none;
+    color: white;
+}
 .header__hotline{
     display: block;
+    
+}
+.header__language{
+    color: white;
+    list-style: none;
+}
+.hotline__menu {
+color: white;
+list-style: none;
 }
 .hotline__information{
     display: flex;
     align-items: center;
 }
 .header__bottom{
-    background: hsla(0, 0%, 100%, 0.767);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
-    margin-left: 100px;
+    padding: 15px 0;
+    position: relative;
 }
-.logo{
-    height: 10px;
+.header__bottom::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50vw;
+    width: calc(100vw * 2);
+    height: 1px;
+    background-color: #f1f1f1;
+}
+/* header__logo */
+.header__logo{
+   width: 100%;
+   max-width: 200px;
+   height: auto;
+}
+
+.header__bottom--menu {
+    display: flex;
+    align-items: center;
 }
 .menu__list2{
     display: flex;
     justify-content: center;
-    gap: 25px;
     font-size: 15px;
     align-items: center;
     font-weight: 500;
-    color: white;
+}
+.menu__list2 li {
+    margin-right: 15px;
 }
 .menu__list2 a{
     text-decoration: none;
     font-family: Roboto, sans-serif;
     font-size: 14px;
+    color: #fff;
+}
+.a span{
+    color: white;
 }
 .button{
     display: flex;
+    gap: 10px;
 }
 .btn__online{
-    background: yellow;
+    background: #fd0;
     border: none;
     padding: 10px 20px;
     font-family: Roboto, sans-serif;
     font-size: 13px;
     font-weight: 600;
+}
+.button2{
+    display: flex;
+}
+.btn__customer{
+    background: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    font-family: Roboto, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #fd0;
 }
 .banner{
 }
@@ -164,3 +223,23 @@ display: block;
     gap: 20px;
 }
 
+
+
+
+
+/* header */
+
+/* main */
+/* main banner */
+/* main about */
+
+/* footer */
+
+
+
+/* button */
+/* form */
+
+
+
+/* grid */
