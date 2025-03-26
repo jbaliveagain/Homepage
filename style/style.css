@@ -14,28 +14,52 @@
 }
 
 .header__top{
-justify-items: end;
-padding-top: 7px;
-width: 100%;
-display: flex;
-margin: 0px 0px 0px 10px;
+    display: flex;
+    justify-content: flex-end;
+
 }
 .header__menu{
-    flex: 1;
-    justify-content: end;
     display: flex;
+    align-items: center;
+    padding: ;
 }
 .menu__list{
     display: flex;
-    gap: 25px;
-    font-size: 15px;
-    padding-bottom: 30px;
+    align-items: center;
     font-family: Roboto, sans-serif;
+    margin-right: 30px;
+}
+.menu__list li:not(:last-child) {
+    margin-right: 30px;
 }
 .menu__list a{
+    display: flex;
+    align-items: center;
     text-decoration: none;
     color: white;
 }
+
+.menu__list a i {
+    display: inline-block;
+    margin-right: 10px;
+}
+.header__language {
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.header__language .is-icon {
+    margin-right: 10px;
+}
+
+.header__language form select {
+    background: none;
+    color: #fd0 !important;
+    border: none;
+    outline: none;
+}
+
 .header__hotline{
     display: block;
     
@@ -201,15 +225,7 @@ list-style: none;
 display: block;
 }
 .container__footer{
-    margin-right: auto;
-    margin-left: auto;
-    padding-top: 60px;
-    padding-bottom: 35px;
-    padding-right: 200px;
-    padding-left: 200px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+ display: block;
 }
 .company1 {
     margin-bottom: 30px;
@@ -222,7 +238,9 @@ display: block;
     display: grid;
     gap: 20px;
 }
-
+.select {
+    
+}
 
 
 
