@@ -502,9 +502,11 @@ color: #fd0 ;
     margin-bottom: 20px;
 }
 
-.section-header h2 {
-    font-size: 28px;
-    font-weight: bold;
+.section__header h2 {
+    font-size: 30px;
+    font-family: Anton, serif;
+    font-weight: 400 ;
+    letter-spacing: 1px;
 }
 
 .highlight {
