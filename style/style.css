@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .container{
     margin: 0 auto;
     padding: 0 15px;
@@ -260,4 +261,268 @@ display: block;
 
 
 
+=======
+.container{
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 100%;
+    max-width: 1440px;
+}
+/* header */
+.header{
+     position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: hsla(0, 0%, 100%, .3);
+}
+
+.header__top{
+    display: flex;
+    justify-content: flex-end;
+
+}
+.header__menu{
+    display: flex;
+    align-items: center;
+    padding: ;
+}
+.menu__list{
+    display: flex;
+    align-items: center;
+    font-family: Roboto, sans-serif;
+    margin-right: 30px;
+}
+.menu__list li:not(:last-child) {
+    margin-right: 30px;
+}
+.menu__list a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.menu__list a i {
+    display: inline-block;
+    margin-right: 10px;
+}
+.header__language {
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.header__language .is-icon {
+    margin-right: 10px;
+}
+
+.header__language form select {
+    background: none;
+    color: #fd0 !important;
+    border: none;
+    outline: none;
+}
+
+.header__hotline{
+    display: block;
+    
+}
+.header__language{
+    color: white;
+    list-style: none;
+}
+.hotline__menu {
+color: white;
+list-style: none;
+}
+.hotline__information{
+    display: flex;
+    align-items: center;
+}
+.header__bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px 0;
+    position: relative;
+}
+.header__bottom::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50vw;
+    width: calc(100vw * 2);
+    height: 1px;
+    background-color: #f1f1f1;
+}
+/* header__logo */
+.header__logo{
+   width: 100%;
+   max-width: 200px;
+   height: auto;
+}
+
+.header__bottom--menu {
+    display: flex;
+    align-items: center;
+}
+.menu__list2{
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    align-items: center;
+    font-weight: 500;
+}
+.menu__list2 li {
+    margin-right: 15px;
+}
+.menu__list2 a{
+    text-decoration: none;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    color: #fff;
+}
+.a span{
+    color: white;
+}
+.button{
+    display: flex;
+    gap: 10px;
+}
+.btn__online{
+    background: #fd0;
+    border: none;
+    padding: 10px 20px;
+    font-family: Roboto, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+}
+.button2{
+    display: flex;
+}
+.btn__customer{
+    background: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    font-family: Roboto, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #fd0;
+}
+.banner{
+}
+.centertitle{
+    position: absolute;
+    text-align: center;
+}
+.centertitle span{
+    color: yellow;
+}
+.description{
+    position: absolute;
+    text-align: center;
+    font-size: 20px;
+    left: 20%;
+}
+.row{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px
+}
+.box__image{
+    object-fit: contain;  
+}
+.box__content {
+    padding-top: 15%;
+    padding-left: 90px;
+    max-width: 500px;
+    line-height: 1.5;
+}
+.title1{
+    font-size: 36px;
+    font-family: Anton, serif;
+    letter-spacing: 1px;
+    padding-bottom: 18px;
+}
+.title1 span{
+    color: #fd0;
+}
+.content__description{
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+    padding-bottom: 17px;
+    color: #333;
+}
+.content__description2{
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+    color: #333;
+    padding-bottom: 17px;
+}
+.title2{
+    font-size: 30px;
+    font-family: Anton, serif;
+    letter-spacing: 1px;
+    padding-bottom: 18px;
+    text-transform: uppercase;
+}
+.title2 span{
+    color: #fd0   
+}
+.section {
+    padding-top: 60px;
+    padding-bottom: 35px;
+}
+.container{
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.footer__top{
+display: block;
+}
+.container__footer{
+ display: block;
+}
+.company1 {
+    margin-bottom: 30px;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+}
+.address__information{
+    display: grid;
+    gap: 20px;
+}
+.select {
+    
+}
+
+
+
+
+/* header */
+
+/* main */
+/* main banner */
+/* main about */
+
+/* footer */
+
+
+
+/* button */
+/* form */
+
+
+
+>>>>>>> b1443bf (Home Fixing)
 /* grid */
