@@ -563,3 +563,54 @@ color: #fd0 ;
     color: yellow;
     text-decoration: none;
 }
+/* Báo lá cải */
+.news__container{
+    padding: 40px;
+}
+.news__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.btn__viewall{
+    background: yellow;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    font-family: Anton, serif;
+    display: inline-block;
+}
+.news__header h2 {
+    font-size: 30px;
+    font-family: Anton, serif;
+    font-weight: 400 ;
+    letter-spacing: 1px;
+}
+.news__contents{
+    display: flex;
+    position: relative;
+    padding: 0px 30px;
+}
+.news__title {
+    padding: 20px 0px 0px 0px;
+}
+.news__title .time{
+    font-size: .875rem;
+}
+.link__title{
+    font-family: Anton, serif;
+    text-decoration: none;
+    color: #000;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 17px;
+}
+.btn__newsall{
+    text-decoration: none;
+    color: black;
+    font-family: Anton, serif;
+}
+.branch__titles{
+    text-align: center;
+}
