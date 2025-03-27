@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 .container{
     margin: 0 auto;
     padding: 0 15px;
@@ -22,7 +22,6 @@
 .header__menu{
     display: flex;
     align-items: center;
-    padding: ;
 }
 .menu__list{
     display: flex;
@@ -243,25 +242,6 @@ display: block;
     
 }
 
-
-
-
-/* header */
-
-/* main */
-/* main banner */
-/* main about */
-
-/* footer */
-
-
-
-/* button */
-/* form */
-
-
-
-=======
 .container{
     margin: 0 auto;
     padding: 0 15px;
@@ -285,7 +265,6 @@ display: block;
 .header__menu{
     display: flex;
     align-items: center;
-    padding: ;
 }
 .menu__list{
     display: flex;
@@ -485,44 +464,100 @@ list-style: none;
     width: 100%;
     flex-wrap: wrap;
 }
-.footer__top{
-display: block;
+.box__content--2{
+    justify-content: center;
+    text-align: center
 }
-.container__footer{
- display: block;
+.center__title--2 span {
+color: #fd0 ;
 }
-.company1 {
-    margin-bottom: 30px;
-    font-weight: 900;
-    text-transform: uppercase;
-    font-family: Roboto, sans-serif;
-    font-size: 18px;
+.center__title--2{
+    position: absolute;
+    top: 5%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    text-align: center;
+    color: white; 
+    font-size: 36px;
+    font-family: Anton, serif;
+    font-weight: 400;
 }
-.address__information{
+.background__img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Content 2 */
+.content__section {
+    padding: 40px;
+}
+
+.section__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.section-header h2 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.highlight {
+    color: yellow;
+}
+
+.btn__content {
+    background: yellow;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    font-family: Anton, serif;
+}
+
+.grid-container {
     display: grid;
-    gap: 20px;
-}
-.select {
-    
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
 }
 
+.grid-item {
+    position: relative;
+    width: 100%;
+}
 
+.grid-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
 
+.grid-item.large {
+    grid-column: span 2;
+}
 
-/* header */
+.grid-item h3 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    font-size: 18px;
+    padding: 5px 10px;
+}
 
-/* main */
-/* main banner */
-/* main about */
+.content__title {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    font-weight: bold;
+}
 
-/* footer */
-
-
-
-/* button */
-/* form */
-
-
-
->>>>>>> b1443bf (Home Fixing)
-/* grid */
+.content__title a {
+    color: yellow;
+    text-decoration: none;
+}
