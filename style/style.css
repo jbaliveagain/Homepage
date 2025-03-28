@@ -466,7 +466,8 @@ list-style: none;
 }
 .box__content--2{
     justify-content: center;
-    text-align: center
+    text-align: center;
+    padding: 5%;
 }
 .center__title--2 span {
 color: #fd0 ;
@@ -590,7 +591,7 @@ color: #fd0 ;
 .news__contents{
     display: flex;
     position: relative;
-    padding: 0px 30px;
+    padding: 0px 40px;
 }
 .news__title {
     padding: 20px 0px 0px 0px;
@@ -613,4 +614,23 @@ color: #fd0 ;
 }
 .branch__titles{
     text-align: center;
+    justify-content: center;
+    display: flex;
+}
+.branch__img{
+    display: flex;
+    justify-content: space-around;
+}
+.home__content3{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.Background__content3{
+    
+    top: 50%;
+    left: 50%;
+    
+    width: 100%;
+    height: 100%;
 }
