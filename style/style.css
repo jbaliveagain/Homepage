@@ -668,6 +668,13 @@ list-style: none;
     height: auto;
     object-fit: cover;
     transition: transform 0.3s ease; 
+<<<<<<< HEAD
+=======
+}
+
+.grid-item a:hover img {
+    transform: scale(1.1); 
+>>>>>>> 498fefdf9243ea99151a820b340e7234b20e0e7b
 }
 
 .grid-item a:hover img {
