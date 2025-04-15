@@ -518,6 +518,7 @@ list-style: none;
     width: 100%;
     color: white;
     font-family: 'Arial', sans-serif;
+    z-index: -999;
   }
   
   .highlight-bg {
@@ -532,18 +533,6 @@ list-style: none;
     display: block;
   }
   
-  .highlight-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    padding: 60px 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
   
   .highlight-title {
     font-size: 32px;
@@ -635,7 +624,7 @@ list-style: none;
 .section__header h2 {
     font-size: 30px;
     font-family: Anton, serif;
-    font-weight: 400 ;
+    font-weight: 400;
     letter-spacing: 1px;
 }
 
@@ -668,19 +657,11 @@ list-style: none;
     height: auto;
     object-fit: cover;
     transition: transform 0.3s ease; 
-<<<<<<< HEAD
-=======
 }
 
-.grid-item a:hover img {
-    transform: scale(1.1); 
->>>>>>> 498fefdf9243ea99151a820b340e7234b20e0e7b
+.grid-item:hover img {
+    transform: scale(1.1); /* This is now directly on the grid-item hover */
 }
-
-.grid-item a:hover img {
-    transform: scale(1.1);
-}
-
 
 .grid-item.large {
     grid-column: span 2;
@@ -693,7 +674,7 @@ list-style: none;
     color: white;
     font-size: 18px;
     padding: 5px 10px;
-    z-index: 10; 
+    z-index: 10;
 }
 
 .content__title {
@@ -702,13 +683,24 @@ list-style: none;
     left: 10px;
     color: white;
     font-weight: bold;
-    z-index: 10; 
+    z-index: 10;
 }
 
 .content__title a {
-    color: yellow;
+    display: inline-block;
+    padding: 6px 15px;
+    background-color: black;  /* Initially black background */
+    color: yellow;            /* Initially yellow text */
     text-decoration: none;
     font-weight: bold;
+    font-family: Anton, serif;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Transition updated to ease-in-out */
+}
+
+.content__title a:hover {
+    background-color: yellow;  /* On hover, change background to yellow */
+    color: black;              /* On hover, change text color to black */
 }
 /* Báo lá cải */
 .news__container{
@@ -758,15 +750,51 @@ list-style: none;
     color: black;
     font-family: Anton, serif;
 }
-.branch__titles{
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
     text-align: center;
+  }
+  
+  .branch__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .branch__titles {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #000;
+  }
+  
+  .branch__img {
+    display: flex;
     justify-content: center;
-    display: flex;
-}
-.branch__img{
-    display: flex;
-    justify-content: space-around;
-}
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
+  }
+  
+  .logo {
+    height: auto;
+  }
+  
+  .logo__small {
+    width: 130px;
+  }
+  
+  .logo__large {
+    width: 370px;
+  }
+  
+  .logo__medium {
+    width: 120px;
+  }
+
 .home__content3{
     width: 100%;
     height: 100%;
@@ -964,7 +992,7 @@ color: #fd0 ;
   }
   
   .footer__brands .brand-logo {
-    width: 80px;
+    width: 30px;
     margin: 6px 0;
   }
   
