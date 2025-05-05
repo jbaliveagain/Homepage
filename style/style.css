@@ -120,6 +120,43 @@ list-style: none;
     font-size: 14px;
     color: #fff;
 }
+.menu__list2 {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.menu__list2 li a {
+  position: relative;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding: 8px 0;
+  transition: color 0.3s ease;
+}
+
+.menu__list2 li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #FFD43B;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.menu__list2 li a:hover {
+  color: #FFD43B;
+}
+
+.menu__list2 li a:hover::after {
+  transform: scaleX(1);
+}
 .a span{
     color: white;
 }
@@ -516,7 +553,6 @@ list-style: none;
   .highlight-section {
     position: relative;
     width: 100%;
-    color: white;
     font-family: 'Arial', sans-serif;
     z-index: -999;
   }
@@ -653,10 +689,11 @@ list-style: none;
 }
 
 .grid-item img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    transition: transform 0.3s ease; 
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  z-index: 10; /* Keep image below the anchor */
 }
 
 .grid-item:hover img {
@@ -678,30 +715,24 @@ list-style: none;
 }
 
 .content__title {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    color: white;
-    font-weight: bold;
-    z-index: 10;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-weight: bold;
+  z-index: 20; /* Make sure it's above the image */
 }
 
 .content__title a {
-    display: inline-block;
-    padding: 6px 15px;
-    background-color: black;  /* Initially black background */
-    color: yellow;            /* Initially yellow text */
-    text-decoration: none;
-    font-weight: bold;
-    font-family: Anton, serif;
-    border-radius: 5px;
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Transition updated to ease-in-out */
+  display: inline-block;
+  padding: 6px 15px;
+  background-color: black;
+  color: yellow;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: Anton, serif;
+  border-radius: 5px;
 }
 
-.content__title a:hover {
-    background-color: yellow;  /* On hover, change background to yellow */
-    color: black;              /* On hover, change text color to black */
-}
 /* Báo lá cải */
 .news__container{
     padding: 40px;
