@@ -12,6 +12,7 @@
     left: 0;
     width: 100%;
     background: hsla(0, 0%, 100%, .3);
+    z-index: 1000;
 }
 
 .header__top{
@@ -92,6 +93,18 @@ list-style: none;
     width: calc(100vw * 2);
     height: 1px;
     background-color: #f1f1f1;
+}
+.banner__slide {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.banner__slide .swiper-slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
 }
 /* header__logo */
 .header__logo{
@@ -733,6 +746,7 @@ list-style: none;
   border-radius: 5px;
 }
 
+
 /* Báo lá cải */
 .news__container{
     padding: 40px;
@@ -1056,3 +1070,4 @@ color: #fd0 ;
   .footer__socials a:hover {
     color: #ffc107;
   }
+  
