@@ -11,7 +11,11 @@
     top: 0;
     left: 0;
     width: 100%;
+<<<<<<< HEAD
     background: hsla(hsl(0deg 0% 100% / 58%));
+=======
+    background: hsla(0, 0%, 100%, .3);
+>>>>>>> 2552c9aa07195d02b9adb3cf00b320cf96fc2550
     z-index: 1000;
 }
 
@@ -233,10 +237,13 @@ list-style: none;
     font-family: Anton, serif;
     letter-spacing: 1px;
     padding-bottom: 18px;
+<<<<<<< HEAD
     text-align: left;
 }
 .title1 p{
   text-align: left;
+=======
+>>>>>>> 2552c9aa07195d02b9adb3cf00b320cf96fc2550
 }
 .title1 span{
     color: #fd0;
@@ -615,7 +622,10 @@ list-style: none;
     font-size: 36px;
     font-weight: bold;
     margin-bottom: 10px;
+<<<<<<< HEAD
     
+=======
+>>>>>>> 2552c9aa07195d02b9adb3cf00b320cf96fc2550
   }
   
   .highlight-item span {
@@ -922,7 +932,48 @@ color: #fd0 ;
     z-index: 1;
   }
 
+<<<<<<< HEAD
  
+=======
+  .btn-detail {
+    display: inline-block;
+    background-color: rgb(0, 0, 0);
+    color: black;
+    padding: 6px 14px;
+    font-size: 14px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s ease-in-out;
+    border-radius: 4px;
+    text-decoration: none;
+  }
+  
+  .btn-detail::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: yellow;
+    transition: left 0.3s ease-in-out;
+    z-index: 0;
+  }
+  
+  .btn-detail:hover::before {
+    left: 0;
+  }
+  
+  .btn-detail:hover {
+    color: rgb(0, 0, 0);
+  }
+  
+  .btn-detail span {
+    position: relative;
+    z-index: 1;
+  }
+>>>>>>> 2552c9aa07195d02b9adb3cf00b320cf96fc2550
 
   .btn__content {
     display: inline-block;
