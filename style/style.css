@@ -1,4 +1,19 @@
 
+section {
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+h2, h3, p {
+  margin: 0 0 20px;
+}
+
+.container, .content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 .container{
     margin: 0 auto;
     padding: 0 15px;
@@ -102,6 +117,12 @@ list-style: none;
   width: 100%;
   height: auto;
   z-index: ;
+}
+.banner__slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 0; /* prevent stacking gap */
 }
 
 .banner__slide .swiper-slide img {
@@ -1043,3 +1064,104 @@ color: #fd0 ;
     color: #ffc107;
   }
   
+  /* === RESPONSIVE === */
+/* Thiết bị lớn: desktop */
+@media (min-width: 1200px) {
+  /* Không cần sửa nhiều nếu layout đã OK */
+}
+
+/* Máy tính bảng lớn và nhỏ: 768px – 1199px */
+@media (max-width: 1199px) {
+  .menu__list2 {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .box__image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .box__content {
+    padding-top: 20px;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .highlight-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .branch__img {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+/* Điện thoại: nhỏ hơn 768px */
+@media (max-width: 767px) {
+  .header__menu {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .header__bottom--menu {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu__list2 {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .button {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .box__image,
+  .box__content {
+    width: 100%;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .highlight-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .news__contents {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .news__image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .footer__content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer__column {
+    width: 100%;
+  }
+
+  .branch__img {
+    flex-direction: column;
+    align-items: center;
+  }
+}
