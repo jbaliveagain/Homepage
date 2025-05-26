@@ -1192,3 +1192,71 @@ color: #fd0 ;
     align-items: center;
   }
 }
+
+@media (max-width: 991px) {
+  /* Stack header top menu items */
+  .header__menu {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .menu__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .menu__list li {
+    flex: 1 1 auto;
+    min-width: 100px;
+  }
+  .header__language {
+    margin-left: auto;
+  }
+
+  /* Header bottom menu - make it vertical */
+  .header__bottom--menu {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  /* Menu list 2 vertical stack */
+  .menu__list2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+  .menu__list2 li {
+    width: 100%;
+  }
+  .menu__list2 li a {
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  /* Buttons stack vertically */
+  .button {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+  .button button {
+    width: 100%;
+  }
+}
+
+/* Smallest screens - mobile phones */
+@media (max-width: 575px) {
+  .header__top {
+    flex-direction: column;
+  }
+  .header__language form select {
+    width: 100%;
+  }
+
+  /* Hide search bar on smallest for simplicity */
+  .header__searchbar {
+    display: none;
+  }
