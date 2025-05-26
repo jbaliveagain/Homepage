@@ -1103,21 +1103,48 @@ color: #fd0 ;
 
 /* Điện thoại: nhỏ hơn 768px */
 @media (max-width: 767px) {
-  .header__menu {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
+  @media (max-width: 767px) {
+  .header__top,
+  .header__bottom {
+    padding: 10px 15px;
+  }
+
+  .header__logo img {
+    max-width: 120px;
+    height: auto;
   }
 
   .header__bottom--menu {
     flex-direction: column;
     align-items: flex-start;
+    gap: 8px;
   }
 
   .menu__list2 {
+    display: none;
     flex-direction: column;
-    gap: 8px;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #ccc;
+    margin-top: 10px;
   }
+
+  .menu__list2.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: inline-block;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .header__bottom {
+    flex-direction: column;
+  }
+}
 
   .button {
     flex-direction: column;
